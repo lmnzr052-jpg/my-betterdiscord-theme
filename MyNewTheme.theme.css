@@ -2,14 +2,28 @@
  * @name My New Theme
  * @author lmnzr052-jpg
  * @version 1.0.0
- * @description ثيم مخصص وجديد لتغيير ألوان وتصميم ديسكورد.
+ * @description A high-quality custom theme featuring Yuta Okkotsu for BetterDiscord.
  * @source https://github.com
  */
 
+/* إعدادات الصورة الخلفية والشفافية */
 :root {
-    --background-primary: #111214;    /* لون خلفية المحادثة */
-    --background-secondary: #1e1f22;  /* لون قائمة القنوات */
-    --background-tertiary: #2b2d31;   /* لون شريط السيرفرات */
-    --text-normal: #f2f3f5;           /* لون الخط والكتابة */
-    --brand-experiment: #5865f2;      /* لون الأزرار والتنبيهات */
+    --background-image: url('https://cdn.discordapp.com/attachments/1551580701177155594/1552759482675630140/20260923_143804_upscaled.jpg?ex=6ab77035&is=6ab61eb5&hm=1e0177d13feba6ffae6d95d695f6abd5740098c922475c8f219b51538cfe115f&'); 
+    --background-blur: 0px; /* جعل الصورة واضحة تماماً وبدون تغبيش */
+    --background-opacity: 0.35; /* درجة الشفافية لتظهر الخلفية بوضوح وبشكل مريح للعين */
+    
+    /* ألوان ديسكورد متناسقة مع ألوان الغروب في الصورة */
+    --background-primary: rgba(15, 15, 20, var(--background-opacity));
+    --background-secondary: rgba(25, 20, 25, var(--background-opacity));
+    --background-tertiary: rgba(10, 10, 12, var(--background-opacity));
+    --text-normal: #f2f3f5;
+    --brand-experiment: #d4a373; /* لون أزرار متناسق مع لون أشعة الشمس والغروب */
+}
+
+/* تطبيق الخلفية بشكل كامل ومتناسق على التطبيق */
+body {
+    background-image: var(--background-image) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
 }
