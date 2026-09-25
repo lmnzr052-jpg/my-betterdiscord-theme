@@ -1,0 +1,15 @@
+/**
+ * @name My New Theme
+ * @author lmnzr052-jpg
+ * @version 1.0.0
+ * @description ثيم مخصص وجديد لتغيير ألوان وتصميم ديسكورد.
+ * @source https://github.com
+ */
+
+:root {
+    --background-primary: #111214;    /* لون خلفية المحادثة */
+    --background-secondary: #1e1f22;  /* لون قائمة القنوات */
+    --background-tertiary: #2b2d31;   /* لون شريط السيرفرات */
+    --text-normal: #f2f3f5;           /* لون الخط والكتابة */
+    --brand-experiment: #5865f2;      /* لون الأزرار والتنبيهات */
+}
